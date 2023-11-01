@@ -1,4 +1,4 @@
-package homeworks;
+package homeworks.homework1.point3;
 
 public class AnimalsApplication {
     public static void main(String[] args) {
