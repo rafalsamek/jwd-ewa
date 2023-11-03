@@ -3,14 +3,6 @@ package datatypes;
 public class Demo {
     public static void main (String[] args) {
 
-        String name = "Ala";
-        System.out.println(name);
-
-        System.out.println("Cześć, jestem " + name);
-        System.out.println("tekst " + 1 + 2);
-        System.out.println("tekst " + (1 + 2));
-        System.out.println(1 + 2 + "tekst ");
-
         // liczby całkowite - 1
         // byte - 1 00000000
         // short - 2 00000000 00000000
@@ -22,7 +14,7 @@ public class Demo {
         byte b = -120;
         short s = 3126;
         int i = 1_123_456_789;
-        long l = i * b;
+        long l = (long) i * b;
 
         // liczby zmiennoprzecinkowe
         // float - 4
@@ -38,12 +30,29 @@ public class Demo {
         System.out.println("a"); // napis
         System.out.println('\t'); //tabulator
         System.out.println('\''); //apostrof
+        System.out.println(">" + '\t' + "<"); // konkatenacja
 
         System.out.println('\'');
 
         char c = 64;
-        System.out.println((int)c);
+        System.out.println(c);
+        System.out.println((int)c);// kastowanie zmienną c rzutuję to typu integer
 
+        //boolean
+        boolean chosen = true;
+        boolean q = false;
+
+        System.out.println(chosen);
+        System.out.println(q);
+
+        // String
+        String name = "Ala";
+        System.out.println(name);
+
+        System.out.println("Cześć, jestem " + name);
+        System.out.println("tekst " + 1 + 2);// konkatenacja
+        System.out.println("tekst " + (1 + 2));
+        System.out.println(1 + 2 + "tekst ");// dodawanie dwóch int a następnie konkatenacja
 
     }
 
