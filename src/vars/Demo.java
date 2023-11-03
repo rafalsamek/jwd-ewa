@@ -9,7 +9,7 @@ import java.util.Locale;
 public class Demo {
     public static void main(String[] args) {
         int a;//deklaracja
-        a= 2;//inicjalizacja
+        a = 2;//inicjalizacja
 
         int b = 7;//definicja = deklaracja + inicjalizacja
 
@@ -49,7 +49,9 @@ public class Demo {
 
         System.out.println(v);
         System.out.printf("%.20f" , v);
+        System.out.println();
         System.out.printf(new Locale( "US"), "%.23f" , v);
+        System.out.println();
 
         double e = 3E-10;
 
@@ -61,14 +63,19 @@ public class Demo {
         System.out.println(jackpot);
 
         int val = 0b1010101010; // binarnie
+        System.out.println(val);
+
         int oct = 010101010107; //oktalnie (ósemkowo)
+        System.out.println(oct);
+
         int hex = 0xFF; // heksadecymalnie (szesnastkowo)
+        System.out.println (hex); //od 0 do 9 używany cyfr , od 10 do 15 używamy liter od a do f
 
         boolean choosen = true;
         char key = 'a';
 
         String pasword = "hasło";
-        String message = "raz\tdwa\ttrzy";
+        String message = "raz\tdwa\ttrzy";// \t - znak tabulacjii, \n -znak nowej lini
 
         System.out.println(message);
 
