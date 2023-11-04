@@ -1,179 +1,160 @@
 package operators;
 
-import javax.swing.*;
-import java.util.Spliterator;
-
 public class Demo {
     public static void main(String[] args) {
+        // arytmetyczne
+        int xx = 5;
+        xx = xx + 2;
 
-      //  int x = 5;
-       // x = x + 2;
+        int a = 7;
+        int b = 2;
 
-       // int a = 5;
-       // int b = 2;
+        System.out.println(a + b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a / (double) b);
+        System.out.println(a % b); // 5 % 2 = 1
 
-       // System.out.println(a + b);
-       // System.out.println(a * b);
-       // System.out.println(a / b);
-        //System.out.println(a / (double) b);
+        // jednoargumentowe
+        int c = 5;
+        int d = -c;
 
-       /* System.out.println(3 / 2);
-        System.out.println(5 % 2); // 5 - (2 * 2) = 1 reszty*/
+        System.out.println(c);
+        System.out.println(d);
 
-       /* int a = 5;
-        int b = -a;
-
-        System.out.println(a);
-        System.out.println(b);*/
-
-      /*  int x, y, z;
+        int x, y, z;
         x = 42;
-        y = x ++;
+        y = x++;
 
         System.out.println(y);
         System.out.println(x);
+
         z = ++x;
-        System.out.println(z);*/
+        System.out.println(z);
 
-        //int a = 0;
-        //int b;
+        int aa = 0;
+        int bb;
 
-       // b = a++ + a++; // 0 + 1  a = 2
-       // System.out.println(b);
-        //System.out.println(a);
+        bb = aa++ + aa++; // 0 + 1  = 1
 
-       // int a = 20; // 20 + _ ) a =19
-        //int b ;
+        System.out.println(bb);
+        System.out.println(aa);
 
-      //  b = a-- + a++;
+        int aaa = 20;
+        int bbb;
 
-       // System.out.println(b);
+        bbb = aaa-- + aaa++;
+        System.out.println(bbb);
 
-       /* int x, y, z;
-        x = y = z = 7;
-        y = 12;
+        int xxx, yyy, zzz;
+        xxx = yyy = zzz = 7;
+        yyy = 12;
 
-        System.out.println(y);
+        System.out.println(yyy);
 
-        y = y + 2;
+        yyy = yyy + 2;
 
-        System.out.println(y);
+        System.out.println(yyy);
 
-        y +=2; //y+y +2
+        yyy += 2;
 
-        System.out.println(y); */
+        System.out.println(yyy);
 
-        /*int a = 5;
-        int b = 10;
+        int aaaa = 5;
+        int bbbb = 10;
 
-        boolean equal = a > b;
+        System.out.println(aaaa > bbbb);
 
-        System.out.println(a > b);
-        boolean equal = a !b; */
+        boolean equal = aaaa > bbbb;
 
-        //negacja !
+        System.out.println(equal);
+
+        boolean equal2 = aaaa != bbbb;
+
+        System.out.println(equal2);
+
+        // operatory logiczne
+        // negacja !
         // iloczyn logiczny &&
         // suma logiczna ||
         // równoważność ==
-        // XOR !=
+        // alternatywa rozłączna XOR !=
 
-       /* int x = 0;
-        int y =5;
+        int xxxxx = 0;
+        int yyyyy = 5;
 
-        System.out.println(x > 4 && y < 10);
-        System.out.println(x > 4 && y++ == 5);
+        System.out.println(xxxxx > 4 && yyyyy < 10);
 
-        System.out.println(y);*/
-
-       /* int age = 33;
+        int age = 33;
         boolean test = !(age < 21);
 
         System.out.println(test);
 
-        int age2 = 20;
-        boolean test2 = !(age2 < 21);
+        // systemy liczbowe
+        // system dziesiętny 0,1,2,3,4,5,6,7,8,9
+        // 154 => 1 * 10^2 + 5 * 10^1 + 4 * 10^0 = 154
 
-        System.out.println(test2);*/
+        // system dwójkowa 0,1
+        // 101 -> 1 * 2^1 + 0 * 2^1 + 1 * 2^0 = 4 + 0 + 1 = 5
 
-        //system dziesiętny 0,2,3,4,5,6,7,8,9
+        // system ósemkowy 0,1,2,3,4,5,6,7
+        //47 -> 4 * 8^1 + 7 * 8^0 = 32 + 7 = 39
 
-        //154 -> * 10^2 + 5 * 10^1 + 4 * 10^0 +154
+        // system szesnastkowy 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+        // 3AF -> 3 * 16^2 + 10 * 16^1 + 15 * 16^0 = 3 * 256 + 160 + 15 = 768 + 160 + 15 = 943
 
-        //system dwójkowy 0,1
-        // 101 -> 1 * 2^1 + 0 * 2^1 + 1 * 2^0 = 4 + 1 = 5
-
-        //system ósemkowy (oktalny) 0,1,2,3,4,5,6,7
-        // 47 -> 4 * 8^1 +7 * 8^0 =32 + 7 = 39
-
-        // system szesnastkowy 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,
-        // 3af -> 3* 16^2 + 10 * 16^1 + 15 * 16^0 = 3 * 256 + 160 + 15 = 768 + 175 = 943
-
-       /* System.out.println(Integer.toBinaryString(5));
+        System.out.println(Integer.toBinaryString(5));
         System.out.println(Integer.toOctalString(39));
-        System.out.println(Integer.toHexString(943)); */
+        System.out.println(Integer.toHexString(943));
 
-       /* int a = 11; //00000000 00000000 00000000 00001011
-        System.out.println(Integer.toBinaryString(a)); */
+        int aaaaaa = 11; //0000000 0000000 0000000 0001011
+        System.out.println(Integer.toBinaryString(aaaaaa));
 
-       /* int x = 0b1011;
-        System.out.println(x); */
+        int xxxxxx = 0b1011;
+        System.out.println(xxxxxx);
 
-        /*int x = 0777;
-        System.out.println(x); */
+        int yyyyyy = 0777;
+        System.out.println(yyyyyy);
 
-       /* int x = 0xabcdef;
-        System.out.println(x); */
+        int zzzzzz = 0xabcdef;
+        System.out.println(zzzzzz);
 
-        // - - negacja bitowa
-        // <<- przesunięcie w lewo
-        // >>- przesunięcie w prawo
+        int aaaaaaa = 1;
+        int bbbbbbb = 5;
 
-        /*int a = 1;
-        int b = 5;*/
+        System.out.println(aaaaaaa & bbbbbbb); // a | b
 
-        /*System.out.println(a & b);
+        System.out.printf("%10s\n", Integer.toBinaryString(aaaaaaa));
+        System.out.println(String.format("%32s", Integer.toBinaryString(aaaaaaa)).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(bbbbbbb)).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(aaaaaaa & bbbbbbb)).replace(' ', '0'));
 
+        int ccccccc = 5;
 
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println("---------------------------------------");
-        System.out.println(String.format("%32s", Integer.toBinaryString(a & b)).replace(' ', '0')); */
+        System.out.println(ccccccc >> 1);
 
-        /*System.out.println(a | b);
-         System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println("---------------------------------------");
-        System.out.println(String.format("%32s", Integer.toBinaryString(a | b)).replace(' ', '0')); */
+        System.out.println(String.format("%32s", Integer.toBinaryString(ccccccc)).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(ccccccc >> 1)).replace(' ', '0'));
 
-       /* System.out.println(b << 10);
+        int ddddddd = 5;
 
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println("---------------------------------------");
-        System.out.println(String.format("%32s", Integer.toBinaryString(b << 10)).replace(' ', '0')); */
+        System.out.println(ddddddd << 1);
 
-        //XOR
-        //1 1 -> 0
-        // 1 0 -> 1
-        // 0 1-> 1
-        // 0 0-> 0
+        System.out.println(String.format("%32s", Integer.toBinaryString(ddddddd)).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(ddddddd << 1)).replace(' ', '0'));
 
-       /* System.out.println(a ^ b);
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println("---------------------------------------");
-        System.out.println(String.format("%32s", Integer.toBinaryString(a ^ b)).replace(' ', '0')); */
+        int s = 6 + 4 / 2;
 
-        //Kolejność wykonywania działań
-       /* int y = 6 + (4 / 2);
+        System.out.println(s);
 
-        System.out.println(y); */
+        // arytmetyka tekstów
+        String myName = "Rafal";
 
-      String myName = "Ewa";
+        myName = myName + " Junior";
+//        myName += " Junior";
 
-      //myName = myName + " Jr.";
-      myName = myName += " Jr.";
 
         System.out.println(myName);
+
     }
 }
