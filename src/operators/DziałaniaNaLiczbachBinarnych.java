@@ -8,7 +8,7 @@ public class DziałaniaNaLiczbachBinarnych {
         int c = 0b00011;
         int result = 0b11010;
 
-        boolean isCorrect = (a & b ^c) ==result;
+        boolean isCorrect = (a & b ^c) == result;
         System.out.println("Czy wyrażenie 11001 & 11101 ^ 00011 = 11010 jest poprawne: " + isCorrect);
     }
 }
