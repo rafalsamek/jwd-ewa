@@ -35,5 +35,65 @@ public class Demo {
         int ourBestScore = myScore > yourScore ? myScore : yourScore;
 
         System.out.println("Najlepszy wynik to: " + ourBestScore);
+
+        // pętla for
+        for (int i = 1;  i <= 100; i++){
+            System.out.println("i=" + i);
+        }
+
+        for (int i = 0; i <= 100; i++) {
+            System.out.println("i= " + i);
+        }
+
+//        // pętla while
+//        int i = 0;
+//        while (i < 100) {
+//            System.out.println("i=" + i);
+//            i++;
+//
+//        }
+//
+//        int i = 0 {
+//            do {
+//                System.out.println("i=" + i);
+//                i++;
+//            } while (i <= 100);
+//        }
+
+// wypisz cyfry parzyste
+        for (int i = 1; i < 10; i++) {
+            if (i % 2 != 0) {
+                continue;
+            }
+            System.out.print(i);
+            System.out.print(" ");
+        }
+
+        for (int i = 1; i < 10; i++) {
+            if (i % 2 != 0) {
+                break;
+            }
+            System.out.print(i);
+            System.out.print(" ");
+        }
+
+        // pętle przerwane
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 50; j++) {
+                System.out.println(i + j);
+                break;
+            }
+        }
+
+//        for (int i = 0; i < 10; i++) {
+//            for (int j = 0; j < 50; j++) {
+//                System.out.println(i + j);
+//                break out;
+//            }
+//        }
+
+
+
+
     } // koniec bloku
 }
