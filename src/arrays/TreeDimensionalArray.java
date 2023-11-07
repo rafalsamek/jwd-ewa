@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 public class TreeDimensionalArray {
     public static void main(String[] args) {

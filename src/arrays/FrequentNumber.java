@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 //Napisz program, który znajdzie najczęściej występującą cyfrę w tablicy.
 //        Przykłady:
 //
