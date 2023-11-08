@@ -1,4 +1,4 @@
-package nocnadłubanina;
+package nightworking;
 
 public class Square {
     int side;

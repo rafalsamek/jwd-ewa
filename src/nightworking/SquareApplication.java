@@ -1,4 +1,4 @@
-package nocnadłubanina;
+package nightworking;
 
 /**
  * Napisz program obliczający pole powierzchni,
