@@ -1,13 +1,12 @@
 USE AdventureWorks;
 -- wszystkie wiersze (wszystkie kolumny) tabeli [SalesOrderHeader]
-SELECT*FROM Sales.SalesOrderHeader;
+SELECT * FROM Sales.SalesOrderHeader;
 --3 wybrane kolumny tabeli [SalesOrderHeader] posortowanie wg kolumny ModifiedDate malej¹co
 SELECT ModifiedDate, CustomerID, SalesPersonID FROM Sales.SalesOrderHeader
-ORDER BY ModifiedDate DESC
+ORDER BY ModifiedDate DESC;
 --3 kolumny tabeli [Person].[Contact], posortowane wg LastName malej¹co i FirstName rosn¹co
 SELECT EmailAddress, LastName, FirstName FROM Person.Contact
-ORDER BY LastName DESC, FirstName ASC
-
+ORDER BY LastName DESC, FirstName ASC;
 --wszystkie wiersze z tabeli Person.Contact zawieraj¹ce ‘Michael’ w kolumnie FirstName, posortowane wg kolumny Lastname
 --wszystkie dane kontaktowe (tabela Person.Contact) osób o innym imieniu ni¿ ‘Michael’ i nazwisku zaczynaj¹cym siê na Ac (zapytanie zwróci 4 wiersze)
 --wszystkie dane kontaktowe zmodyfikowane miêdzy 1, a 22 wrzeœnia 2003 (928 wierszy)
