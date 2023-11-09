@@ -1,7 +1,6 @@
 package nightworking.rosary;
 
 import nightworking.rosary.parts.Part;
-import nightworking.rosary.parts.PartFactory;
 import nightworking.rosary.parts.Parts;
 
 public class Rosary implements Prayer {
@@ -10,7 +9,7 @@ public class Rosary implements Prayer {
     private final Conclusion conclusion = new Conclusion();
 
     public Rosary(Parts partName) throws Exception {
-        this.part = PartFactory.create(partName);
+        this.part = Part.create(partName);
     }
 
     public String getPrayer() {
