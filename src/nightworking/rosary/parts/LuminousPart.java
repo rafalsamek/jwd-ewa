@@ -1,17 +1,17 @@
 package nightworking.rosary.parts;
 
 import nightworking.rosary.mysteries.Mystery;
-import nightworking.rosary.mysteries.joyful.*;
+import nightworking.rosary.mysteries.luminous.*;
 
 public class LuminousPart extends AbstractPart {
     public static final String NAME = "Luminous";
 
     private final Mystery[] mysteries = {
-        new JoyfulMystery1(),
-        new JoyfulMystery2(),
-        new JoyfulMystery3(),
-        new JoyfulMystery4(),
-        new JoyfulMystery5()
+        new LuminousMystery1(),
+        new LuminousMystery2(),
+        new LuminousMystery3(),
+        new LuminousMystery4(),
+        new LuminousMystery5()
     };
 
     public String getName() {
