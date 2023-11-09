@@ -1,15 +1,15 @@
 package nightworking.rosary.parts;
 
 public class PartFactory {
-    public static Part create(String name) throws Exception {
+    public static Part create(Parts name) throws Exception {
         switch (name) {
-            case "Joyful":
+            case JOYFUL:
                 return new JoyfulPart();
-            case "Luminous":
+            case LUMINOUS:
                 return new LuminousPart();
-            case "Sorrowful":
+            case SORROWFUL:
                 return new SorrowfulPart();
-            case "Glorious":
+            case GLORIOUS:
                 return new GloriousPart();
             default:
                 throw new Exception("Unknown Part");

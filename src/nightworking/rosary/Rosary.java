@@ -2,13 +2,14 @@ package nightworking.rosary;
 
 import nightworking.rosary.parts.Part;
 import nightworking.rosary.parts.PartFactory;
+import nightworking.rosary.parts.Parts;
 
 public class Rosary implements Prayer {
-    private final Part part;
     private final Introduction introduction = new Introduction();
+    private final Part part;
     private final Conclusion conclusion = new Conclusion();
 
-    public Rosary(String partName) throws Exception {
+    public Rosary(Parts partName) throws Exception {
         this.part = PartFactory.create(partName);
     }
 
@@ -22,12 +23,12 @@ public class Rosary implements Prayer {
         return this.introduction;
     }
 
-    public Conclusion getConclusion() {
-        return this.conclusion;
-    }
-
     public Part getPart() {
         return this.part;
+    }
+
+    public Conclusion getConclusion() {
+        return this.conclusion;
     }
 
     public void pray() {
