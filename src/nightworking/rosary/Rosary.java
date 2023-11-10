@@ -8,7 +8,7 @@ public class Rosary implements Prayer {
     private final Part part;
     private final Conclusion conclusion = new Conclusion();
 
-    public Rosary(Parts partName) throws Exception {
+    public Rosary(Parts partName) {
         this.part = Part.create(partName);
     }
 
